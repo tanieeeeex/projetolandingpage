@@ -1,0 +1,318 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F8F6F2;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+header{
+    background:linear-gradient(135deg,#8A5A44,#6B2737);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    position:relative;
+    overflow:hidden;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    background:rgba(255,255,255,.08);
+    border-radius:50%;
+    top:-80px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.foto{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+    margin-bottom:25px;
+    position:relative;
+    z-index:2;
+    transition:.35s;
+}
+
+.foto:hover{
+    transform:scale(1.05);
+}
+
+header h1{
+    font-size:52px;
+    margin-bottom:10px;
+    position:relative;
+    z-index:2;
+}
+
+.frase{
+    font-size:22px;
+    font-style:italic;
+    opacity:.95;
+    margin-bottom:40px;
+    position:relative;
+    z-index:2;
+}
+
+/* ==========================
+   MENU
+========================== */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:35px;
+    position:relative;
+    z-index:2;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:18px;
+    padding:8px 4px;
+    position:relative;
+    transition:all .3s ease;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:3px;
+    background:#C89B5D;
+    left:50%;
+    bottom:-6px;
+    transform:translateX(-50%);
+    border-radius:10px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#F2D7A1;
+    font-weight:700;
+    transform:translateY(-2px);
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+main{
+    max-width:980px;
+    margin:45px auto;
+    padding:0 20px;
+}
+
+section,
+aside{
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:30px;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+}
+
+section h2,
+aside h2{
+    color:#4A2D2D;
+    font-size:38px;
+    margin-bottom:25px;
+    border-left:6px solid #C89B5D;
+    padding-left:15px;
+}
+
+section p{
+    text-align:justify;
+}
+
+/* ==========================
+   HABILIDADES
+========================== */
+
+#habilidades ul{
+    padding-left:25px;
+}
+
+#habilidades li{
+    margin:12px 0;
+}
+
+/* ==========================
+   PROJETOS
+========================== */
+
+article{
+    background:#FCFAF7;
+    border-left:6px solid #8A5A44;
+    border-radius:12px;
+    padding:25px;
+    margin-top:20px;
+    transition:.35s;
+}
+
+article:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 22px rgba(0,0,0,.12);
+}
+
+article h3{
+    color:#4A2D2D;
+    margin-bottom:12px;
+    font-size:28px;
+}
+
+/* ==========================
+   CURIOSIDADES
+========================== */
+
+#extras ul{
+    list-style:none;
+}
+
+#extras li{
+    margin:16px 0;
+    font-size:18px;
+}
+
+#extras h3{
+    margin-top:35px;
+    color:#4A2D2D;
+}
+
+/* ==========================
+   CONTATO
+========================== */
+
+#contato-profissional{
+    background:white;
+    max-width:980px;
+    margin:30px auto;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+#contato-profissional h2{
+    color:#4A2D2D;
+    font-size:38px;
+    margin-bottom:25px;
+    border-left:6px solid #C89B5D;
+    display:inline-block;
+    padding-left:15px;
+}
+
+#contato-profissional a{
+    display:inline-block;
+    background:#8A5A44;
+    color:white;
+    padding:14px 32px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+}
+
+#contato-profissional a:hover{
+    background:#6B2737;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+footer{
+    background:#6B2737;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:8px;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+header{
+    padding:45px 20px;
+}
+
+header h1{
+    font-size:38px;
+}
+
+.frase{
+    font-size:18px;
+}
+
+.foto{
+    width:150px;
+    height:150px;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:15px;
+}
+
+section h2,
+aside h2,
+#contato-profissional h2{
+    font-size:30px;
+}
+
+article h3{
+    font-size:24px;
+}
+
+section,
+aside,
+#contato-profissional{
+    padding:25px;
+}
+
+#extras li{
+    font-size:16px;
+}
+
+}

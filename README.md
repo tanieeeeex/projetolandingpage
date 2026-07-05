@@ -28,7 +28,7 @@ O objetivo foi criar uma Landing Page pessoal utilizando apenas **HTML5** e **CS
 1. Clone este repositório:
 
 ```bash
-git clone [https://github.com/tanieeeeex.git](https://github.com/tanieeeeex/projetolandingpage)
+git clone https://github.com/tanieeeeex.git
 ```
 
 2. Abra o arquivo `index.html` em qualquer navegador.

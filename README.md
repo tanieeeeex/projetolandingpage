@@ -21,7 +21,7 @@ O objetivo foi criar uma Landing Page pessoal utilizando apenas **HTML5** e **CS
 
 ## 📷 Prévia
 
-> Adicione aqui um print da página (opcional).
+![Preview da Landing Page](preview.png)
 
 ## 🚀 Como visualizar
 
